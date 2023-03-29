@@ -27,3 +27,4 @@ def connectednode(request):
     # ]
     # context = {"cnodes": cnodes}
     return render(request, "iplogger/cnlayout.html")
+
