@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'ourauthsys/headers.html' %}
+<body class="layout-boxed">
+
+    {% comment %} {% extends 'loader.html' %} {% endcomment %}
+
+    {% include 'ourauthsys/navbar.html' %}
+
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        {% include 'ourauthsys/sidebar.html' %}
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+
+        {% include 'ourauthsys/majorcontent.html' %}
+
+        {% include 'ourauthsys/footer.html' %}
+
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+
+    {% include 'ourauthsys/basescripts.html' %}
+
+</body>
+
+</html>

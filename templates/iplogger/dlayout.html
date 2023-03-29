@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'iplogger/headers.html' %}
+<body class="layout-boxed">
+
+    {% include 'iplogger/loader.html' %}
+
+    {% include 'iplogger/navbar.html' %}
+
+    <div class="main-container" id="container">
+
+        <div class="overlay"></div>
+        <div class="search-overlay"></div>
+
+        {% include 'iplogger/sidebar.html' %}
+
+        <!--  BEGIN CONTENT AREA  -->
+        <div id="content" class="main-content">
+
+            <div class="layout-px-spacing">
+
+                {% include 'iplogger/dcontent.html' %}
+                
+            </div>
+
+        {% include 'iplogger/footer.html' %}
+
+        </div>
+        <!--  END CONTENT AREA  -->
+
+    </div>
+
+    {% include 'iplogger/basescripts.html' %}
+
+</body>
+
+</html>
